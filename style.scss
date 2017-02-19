@@ -1,0 +1,333 @@
+$font1: 'Roboto';
+$font2: 'Roboto Condensed';
+$text-color: #f8f2ff;
+$darkest: #090311;
+$darker: #2f1849;
+$dark: #402063;
+$medium: #542b82;
+$light: #723aaf;
+$grey: #aaa;
+$text-bg: #130a1e;
+/*
+$text-color: #eee;
+$darkest: #111;
+$darker: #222;
+$dark: #555;
+$medium: #777;
+$light: #eee;
+$grey: #bbb;
+$text-bg: #333;
+*/
+@font-face {
+    font-family: 'SFChaerilidae';
+    src: url('../fonts/SFChaerilidae.ttf') format('truetype');
+}
+
+body {
+  background: $darkest;
+  color:$text-color;
+  text-align: justify;
+  line-height: 1.5em;
+  font-family: $font1;
+  font-size: 16px;
+  width: 100%;
+}
+
+.titlebar {
+    background: #0e0e0e;
+    padding: 10px 0px;
+    padding-left: 5%;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    font: 24px 'SFChaerilidae';
+    color: #eee;
+    a:hover {text-decoration: none;}
+}
+
+a, a:visited {color: $grey; text-decoration: none;}
+a:hover {color: $grey; text-decoration: underline;}
+h1,
+
+h2 {
+  color: $medium;
+  font: $font2 2.5em;
+  font-weight: 300;
+}
+
+h3 {font-weight: 300;}
+
+div {
+  margin: auto;
+  font: $font1;
+  font-weight: 300;
+  .header {
+      margin-top: 40px;
+      .header-left{
+          h1.top {
+            font-size: 3.5em;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-top: 0px;
+          }
+          h2.top {
+            font-size: 2em;
+            letter-spacing: 1px;
+            text-align: left;
+            margin-top: 20px;
+            margin-right: 15px;
+            padding-bottom: 0px;
+            font-weight: 300;
+            color: $grey;
+          }
+      }
+      .header-right {
+          text-align: right;
+          font-size: 0.8em;
+          h2 {margin-top: 10px;}
+          h3 {
+            font-size: 1.4em;
+            margin-top: -5px;
+          }
+          a {
+            font-weight: 500;
+            color: $light;
+            text-decoration: none;
+          }
+      }
+  }
+  .btn-primary {
+      background-color: $text-bg;
+      border-color: $text-bg;
+      min-width: 60px;
+  }
+  .btn-primary.active, .btn-primary.active:hover, .btn-primary.active.focus, .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:active:hover {background-color: $darker;border-color: $text-bg;}
+  .title {
+      text-align: left;
+  }
+  .text {
+      //background: $text-bg;
+      padding:15px;
+      float:left;
+      border-radius: 8px;
+  }
+  .full-width {
+      margin-bottom:30px;
+      h3 {color: $medium;}
+  }
+  .key {
+    margin-bottom: 50px;
+    .key1 {
+      padding:10px;
+      padding-left: 10%;
+    }
+    .key2 {
+      padding:10px;
+    }
+    h3 {
+        margin:0px 0px 5px 0px;
+        font-weight: 400;
+    }
+  }
+  .data-info {
+    margin-bottom: 50px;
+    span.emphasis {
+        color: $medium;
+        font-family: $font2;
+        font-weight: 400;
+        font-size: 1.2em;
+    }
+  }
+  .insight {
+    text-align: center;
+    margin: 40px 0 ;
+    h3 {
+        font-size:1.5em;
+        font-family: $font2;
+        font-weight: 300;
+        line-height: 1.5em;
+    }
+    h3 span.emphasis {
+        color: $medium;
+        font-weight: 600;
+    }
+  }
+  .stats {
+    display:inline-block;
+    padding:1%;
+    vertical-align: top;
+    text-align: center;
+    h3, h4 {margin-top:0px; font-weight:normal;}
+    h4 {margin-bottom: 0.75em;}
+  }
+  .no-inline {
+    display: block;
+  }
+}
+
+.divider {
+  margin-bottom:40px;
+  width:100%;
+  background: $darker;
+  padding: 30px 0;
+  font-style: italic;
+  margin-top: 60px;
+  display:table;
+  h2 {
+    text-align: center;
+    margin: 0px;
+  }
+  .left h2 {
+    color: $text-color;
+    font-family: $font2;
+    font-weight: 700;
+    font-size: 4em;
+    width:100%;
+    margin-bottom: 10px;
+  }
+  .right h2 {
+    color: $text-color;
+    font-weight: 300;
+    margin-bottom: 0px;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+.note {color:#777; font-size: 14px;}
+.feedback {
+    text-align: center;
+    padding: 20px;
+    border-radius: 4px;
+    background: $text-bg;
+    margin-top: 60px;
+    h3 {margin: 0px;}
+}
+h1.chart-title {color: $text-color; text-align: center; font: 16px $font2; font-weight: 700; text-transform: uppercase; letter-spacing: 4px; margin: 0px;}
+p.chart-explainer {margin-top: 35px; text-align: justify; font-size: 16px;}
+
+//Page specific CSS
+
+.story {
+    margin-top: 340px;
+    margin-bottom: 70px;
+    font-weight: bold;
+    h1, h2, h3 {color: $text-color; text-align: center; margin-top: 55px;}
+    h1 {font: 2em $font2;}
+    h2 {font: 1.5em $font1; color: $medium;}
+    h3 {font: 1.2em $font1; margin-top: 45px; color: $dark;}
+}
+.story.first {margin-top: 20px;}
+
+.header-bg {
+    background: url('img/bg.png');
+    background-position: center;
+    background-size: cover;
+}
+.btn-group {
+    margin: auto;
+    .btn, .btn-default {
+        font: 1.1em 'Roboto Condensed';
+        color: $text-color;
+        input {
+            background: none;
+            border: none;
+        }
+    }
+}
+.btn.active.focus {
+    outline: none;
+}
+
+svg {
+    text {
+        fill: $text-color;
+    }
+    path.domain {
+        fill: $darkest;
+    }
+}
+
+div.header {
+    min-height:150px;
+    margin-top: 0px;
+    padding-top: 40px;
+    .header-left{
+        max-width:100%;
+        h1.top {color: $text-color; text-align: left;}
+        h2 {color: $grey; font-weight: 400; margin-top: 5px; text-align: left; margin-bottom: 15px;}
+    }
+}
+
+.tooltip {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+    font-family:$font2;
+  -moz-border-radius:5px;
+	border-radius: 5px;
+  border: 2px solid $dark;
+  background: $text-bg;
+	opacity: .9;
+  color: $text-color;
+	padding: 10px;
+	width: 200px;
+	font-size: 14px;
+	z-index: 10;
+}
+.tooltip .title {
+	font-size: 13px;
+}
+
+.tooltip .name {
+  font-weight:bold;
+}
+path.line {
+    stroke: rgba(256,256,256,0.3);
+    fill: none;
+    stroke-width: 2px;
+}
+path.domain, g.tick line {
+    stroke: #aaa;
+}
+.r0 {display: none;}
+
+//Slider
+.ticks {
+  font: 10px $font2;
+  font-weight: bold;
+}
+
+.track,
+.track-inset,
+.track-overlay {
+  stroke-linecap: round;
+}
+
+.track {
+  stroke: #000;
+  stroke-opacity: 0.3;
+  stroke-width: 10px;
+}
+
+.track-inset {
+  stroke: $text-bg;
+  stroke-width: 6px;
+}
+
+.track-overlay {
+  pointer-events: stroke;
+  stroke-width: 50px;
+  cursor: crosshair;
+}
+
+h1.year {font-weight: 700; font-family: $font2; color: $text-color;}
+h2.displaced {font-size: 24px; color:$light;}
+
+.handle {
+  fill: $dark;
+  stroke: #000;
+  stroke-opacity: 0.5;
+  stroke-width: 1.25px;
+}
+//
+#chart2 #c174 {fill:#a63434; stroke: #6f1212;}
